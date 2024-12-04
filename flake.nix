@@ -142,6 +142,8 @@
         sdImageRockchip = import ./modules/sd-card/sd-image-rockchip.nix;
         dtOverlayQuartz64ASATA = import ./modules/dt-overlay/quartz64a-sata.nix;
         dtOverlayPCIeFix = import ./modules/dt-overlay/pcie-fix.nix;
+        raspi7inchTouchScreenDSI0 = import ./modules/dt-overlay/rk356x-raspi-7inch-touchscreen-dsi0.nix;
+        raspi7inchTouchScreenDSI1 = import ./modules/dt-overlay/rk356x-raspi-7inch-touchscreen-dsi1.nix;
       };
     } // inputs.utils.lib.eachDefaultSystem (system: {
       legacyPackages = {
