@@ -5,7 +5,7 @@
       /dts-v1/;
       
       / {
-        compatible = "rockchip,rk3566";
+        compatible = "rockchip,rk3566-orangepi-3b";
       };
       
       / {
