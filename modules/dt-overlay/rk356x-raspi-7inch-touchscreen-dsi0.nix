@@ -1,9 +1,13 @@
 { config, pkgs, lib, modulesPath, ... }: {
   hardware.deviceTree.overlays = [{
-    name = "rk356x-raspi-7inch-touchscreen-dsi0";
+    name = "raspi-7inch-touchscreen-dsi0";
     dtsText = ''
       /dts-v1/;
-
+      
+      / {
+        compatible = "rockchip,rk3566";
+      };
+      
       / {
 
         fragment@0 {
