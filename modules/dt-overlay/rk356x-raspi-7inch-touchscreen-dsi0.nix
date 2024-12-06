@@ -1,13 +1,14 @@
 { config, pkgs, lib, modulesPath, ... }: {
   hardware.deviceTree.overlays = [{
     name = "raspi-7inch-touchscreen-dsi0";
+    filter = "*orangepi-3b*";
     dtsText = ''
       /dts-v1/;
-      
+
       / {
-        compatible = "rockchip,rk3566-orangepi-3b";
+        compatible = "rockchip,orangepi-3b";
       };
-      
+
       / {
 
         fragment@0 {
