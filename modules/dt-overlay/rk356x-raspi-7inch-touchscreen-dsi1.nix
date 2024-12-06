@@ -6,6 +6,10 @@
       /dts-v1/;
 
       / {
+        compatible = "xunlong,orangepi-3b";
+      };
+
+      / {
 
         fragment@0 {
           target = <0xffffffff>;
