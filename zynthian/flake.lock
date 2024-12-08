@@ -2,11 +2,11 @@
   "nodes": {
     "nixpkgs": {
       "locked": {
-        "lastModified": 1733220138,
-        "narHash": "sha256-Yh5XZ9yVurrcYdNTSWxYgW4+EJ0pcOqgM1043z9JaRc=",
+        "lastModified": 1733384649,
+        "narHash": "sha256-K5DJ2LpPqht7K76bsxetI+YHhGGRyVteTPRQaIIKJpw=",
         "owner": "NixOS",
         "repo": "nixpkgs",
-        "rev": "bcb68885668cccec12276bbb379f8f2557aa06ce",
+        "rev": "190c31a89e5eec80dd6604d7f9e5af3802a58a13",
         "type": "github"
       },
       "original": {
@@ -55,15 +55,16 @@
         "utils": "utils"
       },
       "locked": {
-        "lastModified": 1733192155,
-        "narHash": "sha256-RINMJom5Ns+tK4iaBaFO7qMQed+FTKdaQt2w8KYh2pw=",
-        "owner": "nabam",
+        "lastModified": 1733480935,
+        "narHash": "sha256-uykAC137OEXVPJ+3yV32R4dDcr40OpFuCzUf8Cq3NFI=",
+        "owner": "antono",
         "repo": "nixos-rockchip",
-        "rev": "dbc24906124d888eb078589607196ee455721cfc",
+        "rev": "c245b3c8536a21660120c710fa81b915c473bc14",
         "type": "github"
       },
       "original": {
-        "owner": "nabam",
+        "owner": "antono",
+        "ref": "zynthian",
         "repo": "nixos-rockchip",
         "type": "github"
       }

@@ -5,7 +5,7 @@
     utils.url = "github:numtide/flake-utils";
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-24.05";
 
-    rockchip = { url = "github:nabam/nixos-rockchip"; };
+    rockchip = { url = "github:antono/nixos-rockchip/zynthian"; };
   };
 
   # Use cache with packages from nabam/nixos-rockchip CI.
@@ -25,13 +25,12 @@
             inputs.rockchip.nixosModules.sdImageRockchip
             inputs.rockchip.nixosModules.raspi7inchTouchScreenDSI1
             ./config.nix
-
             {
               # Use cross-compilation for uBoot and Kernel.
               rockchip.uBoot =
                 inputs.rockchip.packages.${buildPlatform}.uBootOrangePiCM4;
               boot.kernelPackages =
-                inputs.rockchip.legacyPackages.${buildPlatform}.kernel_linux_6_6_rockchip;
+                inputs.rockchip.legacyPackages.${buildPlatform}.kernel_linux_6_12_rockchip;
             }
           ];
         };

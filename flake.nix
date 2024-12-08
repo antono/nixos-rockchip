@@ -98,8 +98,8 @@
         };
         "OrangePiCM4" = {
           uBoot = (uBoot system).uBootOrangePiCM4;
-          kernel = (kernel system).linux_6_6_rockchip;
-          extraModules = [ ];
+          kernel = (kernel system).linux_6_12_rockchip;
+          extraModules = [ noZFS ];
         };
         "RadxaCM3IO" = {
           uBoot = (uBoot system).uBootRadxaCM3IO;
